@@ -13,3 +13,9 @@ patchesJson6902:
       kind: Route
       name: nexus
     path: nexus-route-tls-patch.yaml
+  - target:
+      group: route.openshift.io
+      version: v1
+      kind: Route
+      name: sonarqube
+    path: sonarqube-route-tls-patch.yaml
