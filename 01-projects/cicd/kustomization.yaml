@@ -5,3 +5,11 @@ kind: Kustomization
 bases:
   - github.com/redhat-cop/gitops-catalog/nexus2/base?ref=v0.5
   - github.com/redhat-cop/gitops-catalog/sonarqube8/overlays/plugins?ref=v0.5
+
+patchesJson6902:
+  - target:
+      group: route.openshift.io
+      version: v1
+      kind: Route
+      name: nexus
+    path: nexus-route-tls-patch.yaml
