@@ -1,6 +1,5 @@
 - op: add
-  path: /spec/-
+  path: /spec/tls
   value:
-    tls:
-      termination: edge
-      insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
