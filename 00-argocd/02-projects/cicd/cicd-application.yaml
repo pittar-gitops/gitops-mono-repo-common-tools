@@ -8,7 +8,7 @@ spec:
   destination:
     namespace: cicd-tools
     server: https://kubernetes.default.svc
-  project: projects-project
+  project: common-tools-projects-project
   source:
     path: 01-projects/cicd
     repoURL: https://github.com/pittar-gitops/gitops-mono-repo-common-tools.git
