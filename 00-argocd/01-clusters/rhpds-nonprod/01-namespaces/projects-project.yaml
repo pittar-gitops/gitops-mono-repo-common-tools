@@ -3,7 +3,10 @@ apiVersion: argoproj.io/v1alpha1
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-  name: common-tools-projects-project
+  labels:
+    tenant: common-tools
+    project.type: namespaces
+  name: common-tools-namespaces
 spec:
   clusterResourceWhitelist:
   - group: '*'

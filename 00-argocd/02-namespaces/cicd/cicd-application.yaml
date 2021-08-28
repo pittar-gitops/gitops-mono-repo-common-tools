@@ -3,14 +3,18 @@ apiVersion: argoproj.io/v1alpha1
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"
+  labels:
+    tenant: common-tools
+    argocd.applicaion/type: namespace
+    namespace.env: cicd
   name: cicd-tools
 spec:
   destination:
     namespace: cicd-tools
     server: https://kubernetes.default.svc
-  project: common-tools-projects-project
+  project: common-tools-namespaces
   source:
-    path: 01-projects/cicd
+    path: 01-namespaces/cicd-tools
     repoURL: https://github.com/pittar-gitops/gitops-mono-repo-common-tools.git
     targetRevision: main
   syncPolicy:
