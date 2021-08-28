@@ -6,7 +6,7 @@ metadata:
   labels:
     tenant: common-tools
     project.type: tenant-bootstrap
-  name: common-tools-bootstrap
+  name: tenant-common-tools-bootstrap
 spec:
   destination:
     namespace: developer-gitops
