@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: common-tools-bootstrap
   source:
-    path: 00-argocd/01-clusters/rhpds-nonprod/01-namespaces
+    path: 00-argocd/01-clusters/nonprod/01-namespaces
     repoURL: https://github.com/pittar-gitops/gitops-mono-repo-common-tools.git
     targetRevision: main
   syncPolicy:
